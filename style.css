@@ -12,17 +12,26 @@ body {
   margin: 0 auto;
   max-width: 700px;
   padding: 0 15px;
+  margin-top: 30px;
 }
 
-header {
-}
 header img {
   width: 100%;
   object-fit: cover;
+  max-height: 300px;
 }
 
+#message {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #f44336;
+  background: #f002;
+  padding: 10px;
+  margin-top: 20px;
+  display: none;
+}
 form {
-  margin: 30px auto;
+  margin: 0 auto 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,6 +48,9 @@ form input {
   border-radius: 8px;
   margin-right: 10px;
   background: #e7e7e7;
+}
+input:focus-visible {
+  outline: 1px solid #2196f3;
 }
 form button {
   min-width: 120px;
@@ -58,6 +70,12 @@ form button {
   list-style: none;
 }
 .list-item {
-  padding: 10px;
-    border-bottom: 1px solid #ccc8;
+  padding: 15px;
+  border-bottom: 1px solid #ccc8;
+  font-size: 1.2rem;
+  display: flex;
+}
+
+.list-item span {
+  width: 110px;
 }

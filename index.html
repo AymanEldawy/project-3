@@ -11,31 +11,31 @@
     <!-- header -->
     <header>
       <!-- هنا يمكنك ان تغيير الصورة الرئيسية عن طريق تغيير الرابط -->
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGGd4pxQT3mLCsvheNEVfrFSSHouESNwMq3A&usqp=CAU" alt="عنوان الصورة" />
+      <img src="images.jpg" alt="عنوان الصورة" />
     </header>
     <!-- header -->
     <!-- Form -->
     <div class="container">
+      <p id="message">הזהות הזו לא קיימת</p>
       <form>
-        <input
-          type="number"
-          id="myCard"
-          placeholder="הזן את מספר תעודת הזהות    "
-        />
-        <button id="search">חפש</button>
+
+        <input id="myCard" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="14" placeholder="הזן את מספר תעודת הזהות">
+
+        <button type="button" id="btn">חפש</button>
       </form>
       <!-- Form -->
       <!-- Info -->
-      <ul class="list">
-        <li class="list-item">תעודת זהות</li>
-        <li class="list-item">שם פרטי</li>
-        <li class="list-item">שם אב</li>
-        <li class="list-item">שם משפחה</li>
-        <li class="list-item">קלפי</li>
-        <li class="list-item">סידורי</li>
-        <li class="list-item">מיקום קלפי</li>
+      <ul class="list" id="list">
+        <li class="list-item"><span>תעודת זהות</span></li>
+        <li class="list-item"><span>שם פרטי</span></li>
+        <li class="list-item"><span>שם אב</span></li>
+        <li class="list-item"><span>שם משפחה</span></li>
+        <li class="list-item"><span>קלפי</span></li>
+        <li class="list-item"><span>סידורי</span></li>
+        <li class="list-item"><span>מיקום קלפי</span></li>
       </ul>
       <!-- Info -->
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
