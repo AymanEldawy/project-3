@@ -19,28 +19,29 @@ window.addEventListener('click', () => {
 
   // loadData 
   function loadData(data) {
+    message.style.display = 'none';
     let list = document.getElementById('list')
     list.innerHTML = `
     
-      <li class="list-item"><span>תעודת זהות </span><strong>${data.id}</strong></li>
-      <li class="list-item"><span>שם פרטי </span><strong>${data.firstName}</strong></li>
-      <li class="list-item"><span>שם אב </span><strong>${data.middleName}</strong></li>
-      <li class="list-item"><span>שם משפחה </span><strong>${data.lastName}</strong></li>
-      <li class="list-item"><span>קלפי </span><strong>${data.box}</strong></li>
-      <li class="list-item"><span>סידורי </span><strong>${data.counter}</strong></li>
-      <li class="list-item"><span>מיקום קלפי </span><strong>${data.station}</strong></li>
+      <li class="list-item"><span>رقم الهوية </span><strong>${data.id}</strong></li>
+      <li class="list-item"><span>الاسم </span><strong>${data.firstName}</strong></li>
+      <li class="list-item"><span>اسم الاب </span><strong>${data.middleName}</strong></li>
+      <li class="list-item"><span>اسم العائلة </span><strong>${data.lastName}</strong></li>
+      <li class="list-item"><span>رقم الصندوق </span><strong>${data.box}</strong></li>
+      <li class="list-item"><span>الرقم التسلسلي </span><strong>${data.counter}</strong></li>
+      <li class="list-item"><span>مكان الاقتراع </span><strong>${data.station}</strong></li>
     `
   }
   function printMessage() {
     message.style.display = 'block';
     list.innerHTML = `
-    <li class="list-item"><span>תעודת זהות</span></li>
-    <li class="list-item"><span>שם פרטי</span></li>
-    <li class="list-item"><span>שם אב</span></li>
-    <li class="list-item"><span>שם משפחה</span></li>
-    <li class="list-item"><span>קלפי</span></li>
-    <li class="list-item"><span>סידורי</span></li>
-    <li class="list-item"><span>מיקום קלפי</span></li>
+    <li class="list-item"><span>رقم الهوية</span></li>
+    <li class="list-item"><span>الاسم</span></li>
+    <li class="list-item"><span>اسم الاب</span></li>
+    <li class="list-item"><span>اسم العائلة</span></li>
+    <li class="list-item"><span>رقم الصندوق</span></li>
+    <li class="list-item"><span>الرقم التسلسلي</span></li>
+    <li class="list-item"><span>مكان الاقتراع</span></li>
   `
   }
 
